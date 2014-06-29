@@ -1,0 +1,49 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15dp"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/foto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:src="@android:drawable/sym_def_app_icon" />
+    <!-- android:src="@drawable/caragollum" -->
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/nombre"
+        android:textSize="15dp"
+        android:layout_above="@+id/apellidos"
+        android:layout_marginBottom="26dp" android:layout_toLeftOf="@+id/chkAsist" android:layout_marginRight="-20dp"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/apellidos"
+        android:textSize="15dp"
+        android:layout_marginBottom="24dp"
+        android:layout_alignBottom="@+id/foto" android:layout_toLeftOf="@+id/chkAsist"
+        android:layout_marginRight="-20dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Falta."
+        android:id="@+id/chkAsist"
+        android:checked="false"
+        android:onClick="lanzarMarcado"
+        android:focusable="false" android:focusableInTouchMode="false" android:layout_above="@+id/apellidos"
+        android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

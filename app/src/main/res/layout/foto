@@ -1,0 +1,129 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre:"
+                android:id="@+id/textView"
+                android:layout_marginTop="32dp"
+                android:textSize="18dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp" />
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextnom"
+                android:visibility="visible"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-35dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DNI:"
+                android:id="@+id/textView2"
+                android:textSize="18dp"
+                android:layout_below="@+id/editText2ape"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_marginTop="33dp" />
+
+    <EditText
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText2ape"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/textView"
+                android:layout_alignLeft="@+id/editTextnom"
+                android:layout_alignStart="@+id/editTextnom"
+                android:visibility="visible"
+                android:layout_alignRight="@+id/editTextnom"
+                android:layout_alignEnd="@+id/editTextnom"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apellidos"
+                android:id="@+id/textView3"
+                android:textSize="18dp"
+                android:layout_alignTop="@+id/editText2ape"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView" />
+
+    <EditText
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText2DNI"
+        android:visibility="visible"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha:"
+                android:id="@+id/textView4"
+                android:textSize="18dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evento:"
+                android:id="@+id/textView5"
+                android:textSize="18dp"
+                android:layout_marginTop="38dp"
+                android:layout_below="@+id/textView4"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_alignStart="@+id/textView4" />
+
+    <EditText
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/editText3fech"
+                android:visibility="visible"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_alignLeft="@+id/editText2DNI"
+                android:layout_alignStart="@+id/editText2DNI" />
+
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageButton"
+        android:background="@drawable/camara2"
+        android:onClick="hacerFoto"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/editText2ape"
+        android:layout_alignStart="@+id/editText2ape"
+        android:layout_marginBottom="29dp" />
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_below="@+id/editText3fech"
+            android:layout_alignLeft="@+id/editText2ape"
+            android:layout_alignStart="@+id/editText2ape" android:layout_alignRight="@+id/editText2DNI"
+            android:layout_alignEnd="@+id/editText2DNI" android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
